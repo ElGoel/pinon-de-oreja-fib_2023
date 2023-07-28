@@ -1,0 +1,21 @@
+@use '../base/typography' as t;
+@use '../base/variables' as v;
+
+.hero__title {
+    background-color: #191A36;
+    padding: 2rem 5rem;
+    text-align: center;
+    h1 {
+        font-family: t.$title-font-family;
+    }
+
+    .title--pink {
+        color: v.$light-pink;
+    }
+    .title--yellow {
+        color: v.$light-yellow;
+    }
+    .title--orange {
+        color: v.$vivid-orange;
+    }
+  }

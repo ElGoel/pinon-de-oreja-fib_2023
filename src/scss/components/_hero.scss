@@ -1,0 +1,83 @@
+@use "../base//typography" as t;
+@use "../base//variables" as v;
+
+.hero_front {
+    display: flex;
+    column-gap: 2rem;
+    align-items: center;
+    padding: 1.3rem;
+
+    #hero-img {
+        width: 100%;
+        flex: 1;
+    }
+}
+
+.hero__title {
+    h1 {
+        color: v.$white;
+    }
+}
+
+.hero_front--subTitle {
+    h1 {
+        font-family: t.$title-font-family;
+        font-weight: 600;
+        color: v.$black-global;
+
+        font-size: 3.8rem;
+        margin-bottom: 1.2rem;
+    }
+
+    p {
+        font-family: t.$main-font-family;
+        font-weight: 600;
+        font-size: 1.5rem;
+        color: v.$primary-color;
+    }
+    flex: 1;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero_content {
+    h1 {
+        color: v.$primary-color;
+        font-family: t.$title-font-family;
+        text-align: center;
+        margin: 3rem
+    }
+    p {
+        color: v.$black_global;
+        margin: 1rem;
+        text-align: justify;
+    }
+
+    span {
+        color: v.$primary-color;
+    }
+}
+
+.hero_content--text {
+    width: 70%;
+}
+
+.hero_content--list {
+    color: v.$black-global;
+    list-style: none;
+    li {
+        margin: 1rem 0;
+    }
+    li::before {
+        content: "\2022";  
+        color: v.$light-green-cyan; 
+        font-weight: bold; 
+        display: inline-block; 
+        width: 1em; 
+        margin-left: -1em;
+    }
+}
